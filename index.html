@@ -16,6 +16,13 @@ body {
     overflow: hidden; /* Optional: hides scrollbars if not needed */
 }
 
+.video-style {
+    width: 100%;  /* Adjust as necessary */
+    height: 100%; /* Adjust as necessary */
+    object-fit: contain; /* Ensures the video fits within its container without cropping */
+}
+
+
 .face.front {
     display: flex;
     justify-content: center;
@@ -141,7 +148,7 @@ body {
             </div>    
             <div class="face top"><iframe src="https://luciarebolino.github.io/UA24GHZ/" width="100%" height="100%"></iframe>
             </div>
-            <div class="face bottom"> <video autoplay loop muted>
+            <div class="face bottom"> <video class="video-style" autoplay loop muted>
                 <source src="UA_tools.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -152,7 +159,7 @@ body {
         </div>
     </div>
     <div class="text-below">
-        <p>TT LECTURE_240417_LUCIA REBOLINO</p>
+        <p>TT LECTURE_240418_LUCIA REBOLINO</p>
     </div>
       </div>
       <script>
